@@ -1,0 +1,5 @@
+# Ignore Python environment in ais raw data
+ais raw data/venv/
+ais raw data/env/
+ais raw data/.env/
+ais raw data/ENV/
