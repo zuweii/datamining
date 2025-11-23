@@ -8,7 +8,7 @@ ds = xr.open_dataset(
     fn, engine="cfgrib",
     backend_kwargs={"filter_by_keys": {"typeOfLevel": "heightAboveGround", "level": 10, "stepType": "instant"}}
 )
-print(list(ds.data_vars))  # you'll see names like UGRD_10maboveground, VGRD_10maboveground
+print(list(ds.data_vars))
 
 # tidy names
 rename = {}
