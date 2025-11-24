@@ -83,6 +83,7 @@ datamining/
    - Parse nested JSON fields (boundingBox, regions, vessel details)
    - Convert timestamps to datetime format
    - Extract relevant columns from raw GFW encounter data
+   - Handle missing values and data type conversions 
 
 2. **Feature Engineering**:
 
