@@ -70,7 +70,7 @@ datamining/
   - **Speed Metrics**: Median speed during encounter for both vessels
   - **Vessel Characteristics**: Type, flag, MMSI for both encounter participants
   - **Geographic Context**: Distance from shore, distance from nearest port, bounding box coordinates
-  - **Risk Classification**: Binary high-risk flag for encounters <1km
+  - **Risk Classification**: True/False high-risk flag for encounters
 
 - **Temporal Features**:
   - Start/end timestamps for encounter window analysis
@@ -88,19 +88,18 @@ datamining/
 
    - Calculate encounter duration from start/end times
    - Compute distance metrics (shore, port, vessel-to-vessel)
-   - Create binary risk flags based on proximity thresholds (<1km)
 
 3. **Exploratory Data Analysis**:
 
    - Analyze distribution of encounter distances and durations
    - Identify outliers using IQR method on numeric features
-   - Visualize temporal patterns (time of day, day of week)
-   - Map geographic distribution of high-risk encounters
+   - Identify multicollinearity
 
-4. **Risk Classification**:
-   - Flag encounters with median distance <1km as high collision risk
-   - Analyze vessel type combinations in near-miss events
+4. **Risk Analysis**:
+   - Flag encounters with possible risk (based on classification model training)
+   - Analyze vessel type combinations in high-risk events
    - Assess correlation between distance from shore/port and risk levels
+   - Analyse geographical areas with high risks
 
 ### Key Insights
 
