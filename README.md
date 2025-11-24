@@ -328,7 +328,7 @@ datamining/
 
 ```bash
 pip install pandas numpy xarray matplotlib seaborn scipy statsmodels
-pip install scikit-learn imblearn geopy copernicusmarine
+pip install scikit-learn imblearn geopy copernicusmarine folium 
 ```
 
 ### Running the Notebooks
