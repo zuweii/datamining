@@ -29,7 +29,9 @@ datamining/
 │       └── gfw_encounters_recent.csv
 ├── piracy/
 │   ├── cleaned_data_output/
-│   │   └── cleaned_pirate_attacks.csv
+│   │   ├── cleaned_pirate_attacks.csv    # Raw incidents cleaned (deduplicated, imputed, standardized)
+│   │   ├── df_integrated_risks.csv       # Final Integrated dataframe with composite risk score and risk level
+│   │   └── df_with_risk_scores.csv       # Enhanced dataframe with risk scores for all subsequent analysis
 │   └── raw_data_archive/
 │       ├── pirate_attacks.csv
 │       ├── country_codes.csv
